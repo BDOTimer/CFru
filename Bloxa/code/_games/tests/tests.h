@@ -11,8 +11,8 @@
 #include "collection/Test_Clock_01.h"
 
 ///---------------------------------|
-/// ???                             |
+/// Сетка                           |
 ///---------------------------------:
-/// ...
+#include "collection/Test_Cell_01.h"
 
 #endif // TESTS_H

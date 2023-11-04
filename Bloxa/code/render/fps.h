@@ -14,10 +14,10 @@ struct  Fps : public sf::Text, protected Global
             setFont                  (*font);
             setCharacterSize           (14);
             setStyle    (sf::Text::Regular);
-            setFillColor(sf::Color(0,255,0));
+            setFillColor(sf::Color(0,0,0));
 
             auto sz = view.getSize();
-            setPosition({float(-sz.x/2 + PAD), -sz.y/2 + PAD});
+            setPosition({float(sz.x - PAD), 0});
         }
 
     void update()
@@ -40,13 +40,13 @@ private:
     {   std::string s("FPS: ");
                     s += std::to_string(cnt);
         setString  (s);
-        //dub2right  ( );
+        dub2right  ( );
     }
 
     void dub2right()
     {   const sf::FloatRect& BOUND = getLocalBounds();
         if(BOUND.width > Cfg::p->winsize.x - getPosition().x)
-        {   setPosition({Cfg::p->winsize.x - BOUND.width - PAD, PAD});
+        {   setPosition({Cfg::p->winsize.x - BOUND.width - PAD, 0});
         }
     }
 };

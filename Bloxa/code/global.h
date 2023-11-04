@@ -29,7 +29,8 @@ struct Global
 
     static void init()
     {   font = new sf::Font();
-        font->loadFromFile("sansation.ttf");                       ///<------!!!
+      //font->loadFromFile("sansation.ttf");                       ///<------!!!
+        font->loadFromFile  ("C:/windows/fonts/arial.ttf");       ///<-------!!!
     }
 
     static void del()
@@ -43,6 +44,22 @@ protected:
     static sf::RenderWindow* pwindow;
 };
 
-//sf::Font*   Global::font = nullptr;
+namespace Objects
+{
+    ///-------------------------|
+    /// Интерфейс объекта.      |--------------------------------------------!!!
+    ///-------------------------:
+    struct      IObject : sf::Drawable
+    {   virtual~IObject(){}
+        virtual void update   (                        ) = 0;
+        virtual bool RPControl(std::string_view command,
+                               std::vector<float>& arg ) = 0;
+
+        std::string_view     name;
+
+    private:
+    };
+
+}
 
 #endif // GLOBAL_H

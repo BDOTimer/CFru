@@ -9,4 +9,4 @@
  
  Bloxa.cbp - это проект для Code::Blocks
  
- ![Screenshot in game 1](screenshorts/ver-2023.11.01.jpg)
+ ![Screenshot in game 1](screenshorts/ver-2023.11.03.jpg)

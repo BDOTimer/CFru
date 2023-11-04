@@ -7,19 +7,6 @@
 
 namespace Objects
 {
-    ///-------------------------|
-    /// Интерфейс объекта.      |--------------------------------------------!!!
-    ///-------------------------:
-    struct      IObject : sf::Drawable
-    {   virtual~IObject(){}
-        virtual void update   (                        ) = 0;
-        virtual bool RPControl(std::string_view command) = 0;
-
-        std::string_view     name;
-
-    private:
-    };
-
     ///------------------------------------------------------------------------|
     /// Тестовый объект Часы.
     ///------------------------------------------------------------------------:
@@ -110,7 +97,7 @@ namespace Objects
         ///-----------------------------------------|
         /// Команды поступающие из моска.           |
         ///-----------------------------------------:
-        bool RPControl(std::string_view command)
+        bool RPControl(std::string_view command, std::vector<float>& arg)
         {
             /// TODO2 ...
 

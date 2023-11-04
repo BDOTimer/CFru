@@ -28,11 +28,12 @@ struct  Render   : Global
             blocksWin  (window, managerCams.get(cam::eCAMERA::E_RED )),
             gameWin    (window, managerCams.get(cam::eCAMERA::E_GAME)),
             logWin     (window, managerCams.get(cam::eCAMERA::E_LOG )),
-            fps        (        managerCams.get(cam::eCAMERA::E_LOG ))
+            fps        (        managerCams.get(cam::eCAMERA::E_GUI )),
+            bh         (window)
 
         {
           //window.setVerticalSyncEnabled(true);
-            window.setFramerateLimit     (50  );
+          //window.setFramerateLimit     (50  );
 
             font .loadFromFile  ("sansation.ttf");                ///<-------!!!
           //font .loadFromFile  ("C:/windows/fonts/arial.ttf");   ///<-------!!!
@@ -44,6 +45,9 @@ struct  Render   : Global
             text.setString              ("...");
 
             Global::pwindow = &window;
+
+            bh.setCallback(L"test-01", [this](){ /*...*/; });
+            bh.setCallback(L"test-02", [this](){ /*...*/; });
         }
 
     ///-------------------------|
@@ -54,7 +58,8 @@ struct  Render   : Global
     ///-------------------------|
     /// Добавить объект.        |
     ///-------------------------:
-    void add(obj::IObject* po){ objects.push_back(po); }
+    void add    (obj::IObject* po){ gameobjects.push_back(po); }
+    void add2red(obj::IObject* po){  redobjects.push_back(po); }
 
     sf::View& get(cam::eCAMERA T){ return managerCams.get(T); }
 
@@ -73,6 +78,8 @@ private:
 
     sf::Clock          clock;
     Fps                  fps;
+
+    ui::ButtonsHolder     bh;
 
     void loop()
     {
@@ -102,6 +109,8 @@ private:
 
                     process_mouse(sf::Vector2i(coord.x, coord.y));
                 }
+
+                bh.prosses(mouse_pos, event);
             }
 
             //window.clear(sf::Color(0,0,64));
@@ -109,23 +118,40 @@ private:
                 update();
             fps.update();
 
+            ///---------------------------------|
+            /// E_GUI                           |
+            ///---------------------------------:
             managerCams.set(cam::eCAMERA::E_GUI);
             window.draw(bg       );
             window.draw(headerStr);
+            window.draw(      fps);
+            window.draw(       bh);
 
+            ///---------------------------------|
+            /// E_RED                           |
+            ///---------------------------------:
             managerCams.set(cam::eCAMERA::E_RED);
             window.draw(blocksWin);
 
-            managerCams.set(cam::eCAMERA::E_GAME);
-            window.draw(gameWin  );
-
-            for(auto po : objects)
+            for(auto po : redobjects)
             {   window.draw(*po  );
             }
 
+            ///---------------------------------|
+            /// E_GAME                          |
+            ///---------------------------------:
+            managerCams.set(cam::eCAMERA::E_GAME);
+            window.draw(gameWin  );
+
+            for(auto po : gameobjects)
+            {   window.draw(*po  );
+            }
+
+            ///---------------------------------|
+            /// E_LOG                           |
+            ///---------------------------------:
             managerCams.set(cam::eCAMERA::E_LOG);
             window.draw(logWin);
-            window.draw(   fps);
 
             window.display();
 
@@ -135,12 +161,14 @@ private:
 
     void update()
     {
-        for(auto po : objects)
+        for(auto po : gameobjects)
         {   po->update();
         }
     }
 
-    std::vector<obj::IObject*> objects;
+    std::vector<obj::IObject*> gameobjects;
+    std::vector<obj::IObject*>  redobjects;
+    std::vector<obj::IObject*>  logobjects;
 
     void process_mouse(const sf::Vector2i& mouse_pos)
     {   std::wstring   s(L"Я XY: [");

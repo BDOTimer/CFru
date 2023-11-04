@@ -30,10 +30,15 @@ int main()
     ///----------------------------------------:
     obj::Test_Clock_01 clock(render->get(cam::eCAMERA::E_GAME));
 
+    obj::Test_Axis_01  axis (render->get(cam::eCAMERA::E_RED ));
+    obj::Test_Cell_01  cell (render->get(cam::eCAMERA::E_RED ));
+
     ///----------------------------------------|
-    /// Добавляем задачу на рендер.            |
+    /// Добавляем задачи на рендер.            |
     ///----------------------------------------:
-                             render->add(&clock);
+                             render->add    (&clock);
+                             render->add2red(&cell );
+                             render->add2red(&axis );
 
     ///----------------------------------------|
     /// Консоль тоже может быть полезна...     |

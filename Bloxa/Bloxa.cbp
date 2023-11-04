@@ -16,7 +16,6 @@
 					<Add option="-O2" />
 					<Add option="-std=c++17" />
 					<Add option="-DSFML_STATIC" />
-					<Add directory="C:/WORKCB-2023/SFML-2.6.0-64/include" />
 					<Add directory="../../../SFML-2.6.0-64/include" />
 					<Add directory="../../../SFML-2.6.0/include" />
 				</Compiler>
@@ -31,7 +30,6 @@
 					<Add library="libfreetype.a" />
 					<Add library="libsfml-system-s.a" />
 					<Add library="libwinmm.a" />
-					<Add directory="C:/WORKCB-2023/SFML-2.6.0-64/lib" />
 					<Add directory="../../../SFML-2.6.0-64/lib" />
 					<Add directory="../../../SFML-2.6.0/lib" />
 				</Linker>
@@ -43,8 +41,10 @@
 		</Compiler>
 		<Unit filename="code/!doc.txt" />
 		<Unit filename="code/_games/games.h" />
+		<Unit filename="code/_games/tests/collection/Test_Cell_01.h" />
 		<Unit filename="code/_games/tests/collection/Test_Clock_01.h" />
 		<Unit filename="code/_games/tests/tests.h" />
+		<Unit filename="code/_gui/buttons.h" />
 		<Unit filename="code/_gui/gui.h" />
 		<Unit filename="code/_log/logout.h" />
 		<Unit filename="code/_redactor/redactor.h" />
@@ -58,6 +58,9 @@
 		<Unit filename="code/render/resources.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
+			<code_completion />
+			<envvars />
+			<debugger />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
