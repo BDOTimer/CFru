@@ -9,4 +9,4 @@
  
  cfru.workspace - это солушен для Code::Blocks
  
-  ![Screenshot in game 1](CFru/screenshorts/banner.jpg)
+  ![Screenshot in game 1](Bloxa/screenshorts/banner.jpg)
