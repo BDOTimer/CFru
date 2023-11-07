@@ -2,69 +2,19 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="ReleaseStatic" />
-	<File name="code\_gui\gui.h" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="code\_games\tests\tests.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="224" topLine="0" />
+			<Cursor1 position="856" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="code\_games\games.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="code\global.cpp" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="289" topLine="0" />
+			<Cursor1 position="421" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="code\_games\tests\tests.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="code\render\render.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="491" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="code\render\fps.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1062" topLine="33" />
-		</Cursor>
-	</File>
-	<File name="code\render\render.h" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3846" topLine="94" />
-		</Cursor>
-	</File>
-	<File name="code\mylib\mylib.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="597" topLine="11" />
-		</Cursor>
-	</File>
-	<File name="code\render\cameras.h" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="491" topLine="111" />
-		</Cursor>
-	</File>
-	<File name="code\global.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="807" topLine="18" />
-		</Cursor>
-	</File>
-	<File name="code\global.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="177" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="code\main_blox.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1434" topLine="3" />
-		</Cursor>
-	</File>
-	<File name="code\_games\tests\collection\Test_Cell_01.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1175" topLine="22" />
-		</Cursor>
-	</File>
-	<File name="code\_gui\buttons.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="5601" topLine="153" />
-		</Cursor>
-	</File>
-	<File name="code\_log\logout.h" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="355" topLine="0" />
+			<Cursor1 position="869" topLine="12" />
 		</Cursor>
 	</File>
 	<File name="code\_redactor\redactor.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -72,9 +22,19 @@
 			<Cursor1 position="222" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="code\render\resources.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="code\render\fps.h" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3918" topLine="91" />
+			<Cursor1 position="605" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="code\_games\tests\collection\Test_Shaders_01\!start.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="418" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="code\_log\logout.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1371" topLine="20" />
 		</Cursor>
 	</File>
 	<File name="code\!doc.txt" open="0" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -82,10 +42,75 @@
 			<Cursor1 position="503" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="code\_games\tests\collection\Test_Clock_01.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="code\render\resources.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4484" topLine="87" />
+			<Cursor1 position="3918" topLine="91" />
 		</Cursor>
 	</File>
-	<EditorTabsLayout layout="22aca9406546a0690064f36100000002=0;Bloxa:code\main_blox.cpp,*1;Bloxa:code\render\render.h,2;Bloxa:code\global.h,3;Bloxa:code\_gui\buttons.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=409;besth=219;minw=409;minh=219;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=22aca9406546a0690064f36100000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<File name="code\global.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2009" topLine="44" />
+		</Cursor>
+	</File>
+	<File name="code\_games\tests\collection\Test_Shaders_01\shaders_sdk.h" open="1" top="1" tabpos="9" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="10272" topLine="253" />
+		</Cursor>
+	</File>
+	<File name="code\_games\tests\collection\Test_Shaders_01\shaders_toy.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="872" topLine="16" />
+		</Cursor>
+	</File>
+	<File name="code\_games\tests\collection\Test_Cell_01.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1693" topLine="38" />
+		</Cursor>
+	</File>
+	<File name="code\_games\tests\collection\Test_Clock_01.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4596" topLine="107" />
+		</Cursor>
+	</File>
+	<File name="code\_games\games.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="289" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="code\_gui\gui.h" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="224" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="code\render\cameras.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2750" topLine="66" />
+		</Cursor>
+	</File>
+	<File name="code\_gui\buttons.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5601" topLine="153" />
+		</Cursor>
+	</File>
+	<File name="code\_games\tests\collection\Test_Shaders_01\IEffect.hpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="559" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="code\main_blox.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1698" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="code\mylib\mylib.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="625" topLine="11" />
+		</Cursor>
+	</File>
+	<File name="code\_games\tests\collection\Test_Shaders_01\Shader.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3266" topLine="83" />
+		</Cursor>
+	</File>
+	<EditorTabsLayout layout="d766ec006549d9120000d46800000002=0;Bloxa:code\_games\tests\collection\Test_Shaders_01\Shader.cpp,1;Bloxa:code\global.h,2;Bloxa:code\_games\tests\collection\Test_Shaders_01\IEffect.hpp,3;Bloxa:code\_games\tests\collection\Test_Shaders_01\shaders_toy.h,4;Bloxa:code\render\render.h,5;Bloxa:code\_games\tests\collection\Test_Cell_01.h,6;Bloxa:code\_games\tests\collection\Test_Clock_01.h,7;Bloxa:code\_games\tests\collection\Test_Shaders_01\!start.h,*8;Bloxa:code\_games\tests\collection\Test_Shaders_01\shaders_sdk.h,9;Bloxa:code\render\cameras.h,10;Bloxa:code\_games\tests\tests.h,11;Bloxa:code\_log\logout.h,12;Bloxa:code\mylib\mylib.h,13;Bloxa:code\global.cpp,14;Bloxa:code\render\fps.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=611;besth=278;minw=611;minh=278;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=d766ec006549d9120000d46800000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

@@ -14,7 +14,7 @@ struct  Fps : public sf::Text, protected Global
             setFont                  (*font);
             setCharacterSize           (14);
             setStyle    (sf::Text::Regular);
-            setFillColor(sf::Color(0,0,0));
+            setFillColor(sf::Color(0,0,255));
 
             auto sz = view.getSize();
             setPosition({float(sz.x - PAD), 0});

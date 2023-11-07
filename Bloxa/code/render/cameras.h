@@ -91,7 +91,7 @@ namespace Cameras
 
                 const float W0 = 0.39f;
                 const float W1 = 0.49f;
-                const float W3 = 0.30f;
+                const float W3 = 0.39f;
                 const float H0 = 0.73f;
                 const float H1 = 0.18f;
                 ///-------------------------.
@@ -101,10 +101,12 @@ namespace Cameras
                 m[3]->setViewport(sf::FloatRect(X1, Y1, W3, H1));
 
                 setSize(m[1]);
-                setSize(m[2]);
+                //setSize(m[2]);
+                m[2]->setSize(800,600);
                 setSize(m[3]);
 
-                m[2]->zoom( .3f);
+                //m[2]->zoom( .3f);
+
             }
            ~ManagerCameras() { for(auto& p : m) delete p; }
 

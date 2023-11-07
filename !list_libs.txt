@@ -1,0 +1,11 @@
+libsfml-main.a
+libsfml-graphics-s.a
+libsfml-window-s.a
+libopengl32.a
+libgdi32.a
+libfreetype.a
+libsfml-system-s.a
+libwinmm.a
+
+C:\WORKCB32-2023\SFML-2.6.0-64\include
+C:\WORKCB32-2023\SFML-2.6.0-64\lib

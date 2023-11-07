@@ -9,3 +9,4 @@ Cfg* Cfg::p = &cfg_default;
 float             Global::deltaTime =     0.0;
 sf::Font*         Global::font      = nullptr;
 sf::RenderWindow* Global::pwindow   = nullptr;
+logout::Log*              plog      = nullptr;

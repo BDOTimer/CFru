@@ -415,12 +415,13 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1698749807 source:c:\workcb32-2023\projects\cfru\bloxa\code\global.cpp
+1699295920 source:c:\workcb32-2023\projects\cfru\bloxa\code\global.cpp
 	"global.h"
 
-1699018362 c:\workcb32-2023\projects\cfru\bloxa\code\global.h
+1699296343 c:\workcb32-2023\projects\cfru\bloxa\code\global.h
 	<SFML/Graphics.hpp>
 	"mylib/mylib.h"
+	"_log/logout.h"
 
 1698751978 c:\workcb32-2023\projects\cfru\bloxa\code\mylib\mylib.h
 	<string>
@@ -430,14 +431,14 @@
 	<SFML/Graphics.hpp>
 	"debug.h"
 
-1698747919 c:\workcb32-2023\projects\cfru\bloxa\code\mylib\debug.h
+1699274249 c:\workcb32-2023\projects\cfru\bloxa\code\mylib\debug.h
 	<iostream>
 	<string_view>
 
-1699007434 source:c:\workcb32-2023\projects\cfru\bloxa\code\main_blox.cpp
+1699292264 source:c:\workcb32-2023\projects\cfru\bloxa\code\main_blox.cpp
 	"render/render.h"
 
-1699012615 c:\workcb32-2023\projects\cfru\bloxa\code\render\render.h
+1699296542 c:\workcb32-2023\projects\cfru\bloxa\code\render\render.h
 	"../global.h"
 	"../_gui/gui.h"
 	"../_redactor/redactor.h"
@@ -457,29 +458,31 @@
 	"../global.h"
 	"tests/tests.h"
 
-1699002726 c:\workcb32-2023\projects\cfru\bloxa\code\_games\tests\tests.h
+1699273058 c:\workcb32-2023\projects\cfru\bloxa\code\_games\tests\tests.h
 	"collection/Test_Clock_01.h"
 	"collection/Test_Cell_01.h"
+	"collection/Test_Shaders_01/!start.h"
 
-1698753054 c:\workcb32-2023\projects\cfru\bloxa\code\_log\logout.h
+1699298952 c:\workcb32-2023\projects\cfru\bloxa\code\_log\logout.h
 	"../global.h"
+	<list>
 
-1699010527 c:\workcb32-2023\projects\cfru\bloxa\code\render\fps.h
+1699297068 c:\workcb32-2023\projects\cfru\bloxa\code\render\fps.h
 	"../global.h"
 
 1698755061 c:\workcb32-2023\projects\cfru\bloxa\code\render\resources.h
 	"../mylib/mylib.h"
 
-1698763469 c:\workcb32-2023\projects\cfru\bloxa\code\render\cameras.h
+1699298062 c:\workcb32-2023\projects\cfru\bloxa\code\render\cameras.h
 	"../global.h"
 
-1699009615 c:\workcb32-2023\projects\cfru\bloxa\code\_games\tests\collection\test_clock_01.h
+1699277346 c:\workcb32-2023\projects\cfru\bloxa\code\_games\tests\collection\test_clock_01.h
 	"../../../global.h"
 
-1699009615 c:\workcb32-2023\projects\cfru\bloxa\code\_games\tests\collection\test_cell_01.h
+1699278680 c:\workcb32-2023\projects\cfru\bloxa\code\_games\tests\collection\test_cell_01.h
 	"../../../global.h"
 
-1699018425 c:\workcb32-2023\projects\cfru\bloxa\code\_gui\buttons.h
+1699018628 c:\workcb32-2023\projects\cfru\bloxa\code\_gui\buttons.h
 	<string_view>
 	<functional>
 	<iostream>
@@ -487,4 +490,30 @@
 	<memory>
 	<map>
 	"../global.h"
+
+1699286317 c:\workcb32-2023\projects\cfru\bloxa\code\_games\tests\collection\test_shaders_01\!start.h
+	"../../../../global.h"
+
+1699297232 source:c:\workcb32-2023\projects\cfru\bloxa\code\_games\tests\collection\test_shaders_01\shader.cpp
+	<vector>
+	<cmath>
+	"!start.h"
+	"tile.h"
+	"shaders_sdk.h"
+	"shaders_toy.h"
+
+1663003851 c:\workcb32-2023\projects\cfru\bloxa\code\_games\tests\collection\test_shaders_01\tile.h
+	<SFML/Graphics.hpp>
+
+1699285277 c:\workcb32-2023\projects\cfru\bloxa\code\_games\tests\collection\test_shaders_01\shaders_sdk.h
+	"IEffect.hpp"
+
+1699288359 c:\workcb32-2023\projects\cfru\bloxa\code\_games\tests\collection\test_shaders_01\ieffect.hpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	<cassert>
+	<string>
+
+1699287973 c:\workcb32-2023\projects\cfru\bloxa\code\_games\tests\collection\test_shaders_01\shaders_toy.h
+	"IEffect.hpp"
 

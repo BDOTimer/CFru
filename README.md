@@ -8,3 +8,5 @@
  3. GCC C++17
  
  cfru.workspace - это солушен для Code::Blocks
+ 
+  ![Screenshot in game 1](CFru/screenshorts/banner.jpg)

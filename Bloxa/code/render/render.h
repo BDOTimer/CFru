@@ -29,9 +29,12 @@ struct  Render   : Global
             gameWin    (window, managerCams.get(cam::eCAMERA::E_GAME)),
             logWin     (window, managerCams.get(cam::eCAMERA::E_LOG )),
             fps        (        managerCams.get(cam::eCAMERA::E_GUI )),
-            bh         (window)
+            bh         (window                                       ),
+            log        (        managerCams.get(cam::eCAMERA::E_LOG ))
 
         {
+            plog = &log;
+
           //window.setVerticalSyncEnabled(true);
           //window.setFramerateLimit     (50  );
 
@@ -81,6 +84,8 @@ private:
 
     ui::ButtonsHolder     bh;
 
+    logout::Log          log;
+
     void loop()
     {
         sf::Vector2i mouse_pos;
@@ -111,6 +116,10 @@ private:
                 }
 
                 bh.prosses(mouse_pos, event);
+
+                if (event.type == sf::Event::KeyPressed)
+                {   input(event);
+                }
             }
 
             //window.clear(sf::Color(0,0,64));
@@ -152,6 +161,7 @@ private:
             ///---------------------------------:
             managerCams.set(cam::eCAMERA::E_LOG);
             window.draw(logWin);
+            window.draw(log   );
 
             window.display();
 
@@ -163,6 +173,12 @@ private:
     {
         for(auto po : gameobjects)
         {   po->update();
+        }
+    }
+
+    void input(const sf::Event& event)
+    {   for(auto po : gameobjects)
+        {   po->input(event);
         }
     }
 

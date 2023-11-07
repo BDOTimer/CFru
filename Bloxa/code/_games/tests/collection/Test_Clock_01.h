@@ -105,6 +105,7 @@ namespace Objects
 
             return false;
         }
+        void input(const sf::Event& event){}
 
     private:
         ///-----------------|

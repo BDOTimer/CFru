@@ -10,3 +10,11 @@
  Bloxa.cbp - это проект для Code::Blocks
  
  ![Screenshot in game 1](screenshorts/ver-2023.11.03.jpg)
+ 
+ version-2023.11.03
+ - эскиз батонов
+ - сетка
+
+ version-2023.11.06
+ - Класс Тестового объекта с Шейдарами.
+ - Добавлен лог.

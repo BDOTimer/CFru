@@ -11,7 +11,7 @@
     #define ASSERT(U) if(!(U)) {std::cout  << "\aASSERT: FILE: "   \
                                        << cutpath(__FILE__)    \
                                        << ", LINE: "           \
-                                       << __LINE__ << '\n' ; ll}
+                                       << __LINE__ << '\n';}
     #define ppp  std::cin.get();
     #define sss  std::wcout << "\nSIGNAL\n";ln
     #define l(a) std::cout  << #a << ": " << (a) << '\n';

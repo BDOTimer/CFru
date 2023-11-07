@@ -16,6 +16,26 @@ struct Cfg
     static Cfg* p;
 };
 
+namespace Objects
+{
+    ///-------------------------|
+    /// Интерфейс объекта.      |--------------------------------------------!!!
+    ///-------------------------:
+    struct      IObject : sf::Drawable
+    {   virtual~IObject(){}
+        virtual void update   (                        ) = 0;
+        virtual bool RPControl(std::string_view command,
+                               std::vector<float>& arg ) = 0;
+        virtual void input(const sf::Event&       event) = 0;
+
+        std::string_view     name;
+
+    private:
+    };
+
+}
+
+namespace obj = Objects;
 
 ///----------------------------------------------------------------------------|
 /// Псевдоглобальные данные.
@@ -37,6 +57,8 @@ struct Global
     {   delete  font;
     }
 
+    static const sf::Font* getFont() { return  font; }
+
 protected:
     static float           deltaTime;
     static sf::Font*            font;
@@ -44,22 +66,9 @@ protected:
     static sf::RenderWindow* pwindow;
 };
 
-namespace Objects
-{
-    ///-------------------------|
-    /// Интерфейс объекта.      |--------------------------------------------!!!
-    ///-------------------------:
-    struct      IObject : sf::Drawable
-    {   virtual~IObject(){}
-        virtual void update   (                        ) = 0;
-        virtual bool RPControl(std::string_view command,
-                               std::vector<float>& arg ) = 0;
+#include "_log/logout.h"
+extern logout::Log* plog;
 
-        std::string_view     name;
-
-    private:
-    };
-
-}
+#define LOG (*plog)
 
 #endif // GLOBAL_H

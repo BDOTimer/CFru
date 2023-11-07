@@ -2,6 +2,5 @@
 <CodeBlocks_workspace_file>
 	<Workspace title="Default workspace">
 		<Project filename="Bloxa/Bloxa.cbp" />
-		<Project filename="../hello/Buttons/Buttons.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>

@@ -37,8 +37,9 @@ namespace Objects
 
             return false;
         }
+        void input(const sf::Event& event){}
 
-private:
+    private:
         ///-----------------|
         /// Камера.         |
         ///-----------------:
@@ -114,6 +115,7 @@ private:
 
             return true;
         }
+        void input(const sf::Event& event){}
 
     private:
         ///-----------------|
