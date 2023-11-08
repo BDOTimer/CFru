@@ -40,6 +40,27 @@ namespace win
 
 namespace snake
 {
+
+    const std::vector<std::string_view> map_01
+    {
+        ",-------------------------------------------------------------------,",
+        "|                    |                                              |",
+        "|  A                 |                         A                    |",
+        "|                    |                                              |",
+        "|                    |               --------------------           |",
+        "|                    |                         |                    |",
+        "|                    |                         |                    |",
+        "|                    |                         |                    |",
+        "|                    |                         |                    |",
+        "|                    |                         |                    |",
+        "|                    |                         |                    |",
+        "|           --------------------               |                    |",
+        "|                                              |                    |",
+        "|                    A                         |               A    |",
+        "|                                              |                    |",
+        "'-------------------------------------------------------------------'"
+    };
+
     struct  vec2i
     {   int x, y;
     };
@@ -53,13 +74,26 @@ namespace snake
     ///-----------------------|
     /// Конфиг.               |
     ///-----------------------:
-    struct Config
-    {   vec2i sizefield  {20, 12};
-        vec2i sizedisplay{26, 18};
+    struct  Config
+    {       Config() : pmap(&map_01)
+            {
+                if(pmap != nullptr)
+                {   sizefield.y   = pmap->        size();
+                    sizefield.x   = pmap->front().size();
+                    sizedisplay.y = sizefield.y + start.y * 2;
+                    sizedisplay.x = sizefield.x + start.x * 2;
+                }
+            }
+
+        vec2i sizefield  {20, 12};
+        vec2i sizedisplay{26, 16};
+        vec2i start      { 3,  2};
 
         const int STATUS     = int(' ');
         const int STATUSDISP = int('.');
         const int APPLE      = int('A');
+
+        const std::vector<std::string_view>* pmap = nullptr;
 
         bool is_free(int status)
         {   return status == STATUS || status == STATUSDISP;
@@ -80,7 +114,8 @@ namespace snake
     /// Ячейка матрицы.       |
     ///-----------------------:
     struct  Cell
-    {       Cell(int st) : status(st) {}
+    {       Cell() = default;
+            Cell(int st) : status(st) {}
 
         vec2i_t position;
 
@@ -100,13 +135,11 @@ namespace snake
 
     std::ostream& operator<<(std::ostream& o, const matrix_t& m)
     {   for    (const auto& r : m)
-        {   o << "   ";
+        {       o << "   ";
             for(const auto& e : r)
             {   o << char(e.get());
-            }
-            o << '\n';
-        }
-        o << '\n';
+            }   o << '\n' ;
+        }       o << '\n' ;
         return  o;
     }
 
@@ -116,11 +149,11 @@ namespace snake
     void cpy(const vec2i& start, matrix_t& o, const matrix_t& m)
     {   for     (size_t y = 0,
                         Y = m.size(),
-                       sy = start.x,
+                       sy = start.y,
                        sY = o.size(); y < Y && sy < sY; ++y, ++sy)
         {   for (size_t x = 0,
                         X = m.front().size(),
-                       sx = start.y,
+                       sx = start.x,
                        sX = o.front().size(); x < X && sx < sX; ++x, ++sx)
             {   o[sy][sx].set(m[y][x].get());
             }
@@ -153,9 +186,13 @@ namespace snake
             {   init       (mat);
                 add_walls  (mat);
             }
+            Field(const std::vector<std::string_view>* Map) : mat(*this)
+            {   load(Map);
+                init(mat);
+            }
 
-        matrix_t& mat       ;
-        vec2i     start{3,3};
+        matrix_t& mat               ;
+        vec2i     start = cfg->start;
 
         ///-----------------------|
         /// Гет свободную клетку. |
@@ -200,14 +237,27 @@ namespace snake
                 r.back () =   r.front();
             }
         }
+
+        void load(const std::vector<std::string_view>* Map)
+        {
+            mat = matrix_t(Map->        size(),
+                  massiv_t(Map->front().size()));
+
+            for    (size_t y = 0; y < Map->        size(); ++y)
+            {   for(size_t x = 0; x < Map->front().size(); ++x)
+                {
+                    mat[y][x].set((int)((*Map)[y][x]));
+                }
+            }
+        }
     };
 
     ///-----------------------|
     /// EmDisplay << Field    |
     ///-----------------------:
     EmDisplay& operator<<(EmDisplay& o, const Field& m)
-    {           cpy(m.start, o.mat, m.mat);
-        return  o;
+    {          cpy(m.start, o.mat, m.mat);
+        return o;
     }
 
     ///------------------------------------------------------------------------|
@@ -226,7 +276,7 @@ namespace snake
         int  get      (                )const{ return        color   ; }
 
     protected:
-        int   color = int('O');
+        int  color = int('O');
     };
 
     ///-----------------------|
@@ -481,7 +531,9 @@ namespace snake
     /// Игра.
     ///------------------------------------------------------------------- Game:
     struct  Game
-    {       Game() : snake( field, {10, 10})
+    {       Game()
+                :   field( cfg->pmap),
+                    snake( field, {10, 10})
             {
                 setapple();
                 pIAI = new AIdefault;
