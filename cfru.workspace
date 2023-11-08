@@ -2,5 +2,7 @@
 <CodeBlocks_workspace_file>
 	<Workspace title="Default workspace">
 		<Project filename="Bloxa/Bloxa.cbp" />
+		<Project filename="Compas/helloCompas.cbp" />
+		<Project filename="matrix/matrix.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>

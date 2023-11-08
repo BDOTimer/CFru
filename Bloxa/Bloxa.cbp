@@ -59,6 +59,7 @@
 		<Unit filename="code/global.cpp" />
 		<Unit filename="code/global.h" />
 		<Unit filename="code/main_blox.cpp" />
+		<Unit filename="code/mylib/debug.h" />
 		<Unit filename="code/mylib/mylib.h" />
 		<Unit filename="code/render/cameras.h" />
 		<Unit filename="code/render/fps.h" />
@@ -66,9 +67,6 @@
 		<Unit filename="code/render/resources.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
-			<code_completion />
-			<envvars />
-			<debugger />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

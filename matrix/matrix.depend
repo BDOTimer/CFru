@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1699367325 source:c:\workcb-2023\projects\cfru\matrix\main.cpp
+	<iostream>
+	<cstdlib>
+	<vector>
+	<ctime>
+
+1699449937 source:c:\workcb-2023\projects\cfru\matrix\code\main.cpp
+	"snake_01.h"
+
+1699456089 c:\workcb-2023\projects\cfru\matrix\code\snake_01.h
+	<iostream>
+	<vector>
+	<list>
+	<windows.h>
+
