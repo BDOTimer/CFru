@@ -1,12 +1,8 @@
 # depslib dependency file v1.0
-1699543199 source:c:\workcb32-2023\projects\cfru\zm-test-01\code\main_zm.cpp
-	<iostream>
-	<string>
-	<vector>
-	<memory>
-	<list>
-	<SFML/Graphics.hpp>
-	"maze_BestMordaEver.h"
+1699822191 source:c:\workcb32-2023\projects\cfru\zm-test-01\code\main_zm.cpp
+	"zm_test_01.h"
+	"zm_test_02.h"
+	"zm_test_03.h"
 
 1525812018 c:\workcb32-2023\sfml-2.6.0\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -855,4 +851,103 @@
 	<cstdlib>
 	<vector>
 	<ctime>
+
+1699616224 c:\workcb32-2023\projects\cfru\zm-test-01\code\maze_bme.h
+	<iostream>
+	<cstdlib>
+	<vector>
+	<ctime>
+
+1699824030 c:\workcb32-2023\projects\cfru\zm-test-01\code\spritesloader.h
+	"base.h"
+
+1699819395 c:\workcb32-2023\projects\cfru\zm-test-01\code\base.h
+	<iostream>
+	<cstdlib>
+	<iomanip>
+	<vector>
+	<string>
+	<ctime>
+	<list>
+	<map>
+	<SFML/Graphics.hpp>
+	"base.h"
+
+1699819666 c:\workcb32-2023\projects\cfru\zm-test-01\code\zm_test_02.h
+	"spritesloader.h"
+	"maze_bme.h"
+
+1699816126 c:\workcb32-2023\projects\cfru\zm-test-01\code\zm_test_01.h
+	<iostream>
+	<string>
+	<vector>
+	<memory>
+	<list>
+	<SFML/Graphics.hpp>
+	"maze_bme.h"
+	"spritesloader.h"
+
+1699825790 c:\workcb32-2023\projects\cfru\zm-test-01\code\zm_test_03.h
+	"spritesloader.h"
+	"maze_bme.h"
+	"snake_02.h"
+
+1699826734 c:\workcb32-2023\projects\cfru\zm-test-01\code\snake_02.h
+	<iostream>
+	<vector>
+	<list>
+	<SFML/Graphics.hpp>
+	<windows.h>
+
+1699822191 source:c:\workcb-2023\projects\cfru\zm-test-01\code\main_zm.cpp
+	"zm_test_01.h"
+	"zm_test_02.h"
+	"zm_test_03.h"
+
+1699816126 c:\workcb-2023\projects\cfru\zm-test-01\code\zm_test_01.h
+	<iostream>
+	<string>
+	<vector>
+	<memory>
+	<list>
+	<SFML/Graphics.hpp>
+	"maze_bme.h"
+	"spritesloader.h"
+
+1699616224 c:\workcb-2023\projects\cfru\zm-test-01\code\maze_bme.h
+	<iostream>
+	<cstdlib>
+	<vector>
+	<ctime>
+
+1699870814 c:\workcb-2023\projects\cfru\zm-test-01\code\spritesloader.h
+	"base.h"
+
+1699819395 c:\workcb-2023\projects\cfru\zm-test-01\code\base.h
+	<iostream>
+	<cstdlib>
+	<iomanip>
+	<vector>
+	<string>
+	<ctime>
+	<list>
+	<map>
+	<SFML/Graphics.hpp>
+	"base.h"
+
+1699819666 c:\workcb-2023\projects\cfru\zm-test-01\code\zm_test_02.h
+	"spritesloader.h"
+	"maze_bme.h"
+
+1699825790 c:\workcb-2023\projects\cfru\zm-test-01\code\zm_test_03.h
+	"spritesloader.h"
+	"maze_bme.h"
+	"snake_02.h"
+
+1699870434 c:\workcb-2023\projects\cfru\zm-test-01\code\snake_02.h
+	<iostream>
+	<vector>
+	<list>
+	<SFML/Graphics.hpp>
+	<windows.h>
 

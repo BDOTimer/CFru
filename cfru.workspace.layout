@@ -2,6 +2,6 @@
 <CodeBlocks_workspace_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveProject path="zm-test-01/zm-test-01.cbp" />
-	<PreferredTarget name="ReleaseStatic" />
-	<EditorTabsLayout layout="6b2da9b0654dddaa0000191100000002=*0;zm-test-01:code\main_zm.cpp,1;zm-test-01:code\maze_bme.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=687;besth=365;minw=687;minh=365;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=6b2da9b0654dddaa0000191100000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<PreferredTarget name="Release" />
+	<EditorTabsLayout layout="070d9118655128950000535100000002=*0;zm-test-01:code\snake_02.h,1;zm-test-01:code\base.h,2;zm-test-01:code\zm_test_03.h,3;zm-test-01:code\zm_test_02.h,4;zm-test-01:code\main_zm.cpp,5;zm-test-01:code\spritesloader.h,6;Bloxa:code\render\render.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=424;besth=241;minw=424;minh=241;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=070d9118655128950000535100000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_workspace_layout_file>

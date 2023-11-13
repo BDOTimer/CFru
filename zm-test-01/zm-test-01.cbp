@@ -38,10 +38,19 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="code/base.h" />
 		<Unit filename="code/main_zm.cpp" />
 		<Unit filename="code/maze_bme.h" />
+		<Unit filename="code/snake_02.h" />
+		<Unit filename="code/spritesloader.h" />
+		<Unit filename="code/zm_test_01.h" />
+		<Unit filename="code/zm_test_02.h" />
+		<Unit filename="code/zm_test_03.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
+			<code_completion />
+			<envvars />
+			<debugger />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

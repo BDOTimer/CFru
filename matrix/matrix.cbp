@@ -25,6 +25,10 @@
 		</Compiler>
 		<Unit filename="code/main.cpp" />
 		<Unit filename="code/snake_01.h" />
-		<Extensions />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

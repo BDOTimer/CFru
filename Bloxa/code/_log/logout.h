@@ -71,7 +71,7 @@ namespace logout
         sf::Text                    text;
 
         virtual void draw(sf::RenderTarget& target,
-                          sf::RenderStates states ) const
+                          sf::RenderStates  states ) const
         {   sf::Text t(text);
 
             size_t i = 0;

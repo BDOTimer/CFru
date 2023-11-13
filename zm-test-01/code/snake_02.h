@@ -7,6 +7,8 @@
 #include <vector>
 #include <list>
 
+#include <SFML/Graphics.hpp>
+
 #define l(a) std::cout  << #a << ": " << (a) << '\n';
 #define ASSERT(U) if(!(U)) {std::cout  << "\aASSERT: FILE: "   \
                                        << cutpath(__FILE__)    \
@@ -43,22 +45,22 @@ namespace snake
 
     const std::vector<std::string_view> map_01
     {
-        ",-------------------------------------------------------------------,",
-        "|                    |                                              |",
-        "|  A                 |                         A                    |",
-        "|                    |                                              |",
-        "|                    |               --------------------           |",
-        "|                    |                         |                    |",
-        "|                    |                         |                    |",
-        "|                    |                         |                    |",
-        "|                    |                         |                    |",
-        "|                    |                         |                    |",
-        "|                    |                         |                    |",
-        "|           --------------------               |                    |",
-        "|                                              |                    |",
-        "|                    A                         |               A    |",
-        "|                                              |                    |",
-        "'-------------------------------------------------------------------'"
+        "####-------------------------------------------",
+        "####|            |eeee                        |",
+        "####|        A   |               A            |",
+        "|----            |                            |",
+        "|                |       ----------------     |",
+        "|       eee      |               |            |",
+        "|          eeee  |      eee      |            |",
+        "|                |      eee      |            |",
+        "|                |               |            |",
+        "|  A          A  |               |            |",
+        "|                |               |            |",
+        "|       ------------------       |            |",
+        "|----                           e|            |",
+        "####|                A          e|       A    |",
+        "####|                         eee|            |",
+        "####------------------------------------------'"
     };
 
     struct  vec2i
@@ -68,8 +70,8 @@ namespace snake
     ///-----------------------|
     /// Потом на sf::Vector2i |
     ///-----------------------:
-    using  vec2i_t   =   vec2i;
-    //using  vec2i_t   =   sf::Vector2u;
+/// using  vec2i_t   =   vec2i;
+    using  vec2i_t   =   sf::Vector2u;
 
     ///-----------------------|
     /// Конфиг.               |
@@ -92,11 +94,14 @@ namespace snake
         const size_t STATUS     = size_t(' ');
         const size_t STATUSDISP = size_t('.');
         const size_t APPLE      = size_t('A');
+        const size_t ZM         = size_t('o');
 
         const std::vector<std::string_view>* pmap = nullptr;
 
-        bool is_free(size_t status)
-        {   return status == STATUS || status == STATUSDISP;
+        bool is_free(size_t  status)
+        {   return status == STATUS     ||
+                   status == STATUSDISP ||
+                   status == ZM;
         }
 
         bool is_apple(size_t status){ return status == APPLE; }
@@ -172,6 +177,9 @@ namespace snake
 
        matrix_t& mat;
 
+       size_t W() const { return mat.front().size(); }
+       size_t H() const { return mat.        size(); }
+
     private:
         /// ...
     };
@@ -217,8 +225,8 @@ namespace snake
         /// Инициализация.        |
         ///-----------------------:
         static void init(matrix_t& m)
-        {   for     (size_t y = 0, Y = m.        size(); y < Y; ++y)
-            {   for (size_t x = 0, X = m.front().size(); x < X; ++x)
+        {   for     (unsigned y = 0, Y = m.        size(); y < Y; ++y)
+            {   for (unsigned x = 0, X = m.front().size(); x < X; ++x)
                 {   m[y][x].position = {x, y};
                 }
             }
@@ -537,7 +545,6 @@ namespace snake
             {
                 setapple();
                 pIAI = new AIdefault;
-                loop    ();
             }
            ~Game(){ delete pIAI; }
 
@@ -547,21 +554,26 @@ namespace snake
         {
             for(gameover = false; !gameover;)
             {
-              //win::cls();
                 win::set_cursor_to_start();
 
-                render  ();
+                loopone();
 
-                gameover = !moved();
-
+                std::cout << display.mat << '\n';
                 win::sleep(100);
             }
+        }
+
+        void loopone()
+        {    render ();
+             gameover = !moved();
         }
 
         ///------------------------|
         /// Поменять мозги.        |
         ///------------------------:
         void set(IAI* p){ if(pIAI != nullptr) delete pIAI; pIAI = p; }
+
+        const EmDisplay& getdisplay() const { return display; }
 
     private:
         EmDisplay display;
@@ -573,7 +585,6 @@ namespace snake
         void render()
         {   field     << snake << apple;
             display   << field;
-            std::cout << display.mat << '\n';
         }
 
         bool moved()
@@ -607,6 +618,7 @@ namespace snake
     void Game::test()
     {    std::cout << "   snake::Game::test()\n";
          Game  run;
+               run.loop();
     }
 
     inline void tests()

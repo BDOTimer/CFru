@@ -9,10 +9,10 @@
 #include <vector>
 #include <ctime>
 
-using matrix_t = std::vector<std::vector<int>>;
-
 namespace labitinth
 {
+    using matrix_t = std::vector<std::vector<int>>;
+
     ///-------------------------|
     /// Интерфейс Лабиринта.    |--------------------------------------------!!!
     ///-------------------------:
