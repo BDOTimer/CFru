@@ -51,6 +51,15 @@
 		<Unit filename="code/_games/tests/collection/Test_Shaders_01/shaders_sdk.h" />
 		<Unit filename="code/_games/tests/collection/Test_Shaders_01/shaders_toy.h" />
 		<Unit filename="code/_games/tests/collection/Test_Shaders_01/tile.h" />
+		<Unit filename="code/_games/tests/collection/Zmeika_01/!start.h" />
+		<Unit filename="code/_games/tests/collection/Zmeika_01/base.h" />
+		<Unit filename="code/_games/tests/collection/Zmeika_01/main_zm.cpp" />
+		<Unit filename="code/_games/tests/collection/Zmeika_01/maze_bme.h" />
+		<Unit filename="code/_games/tests/collection/Zmeika_01/snake_02.h" />
+		<Unit filename="code/_games/tests/collection/Zmeika_01/spritesloader.h" />
+		<Unit filename="code/_games/tests/collection/Zmeika_01/zm_test_01.h" />
+		<Unit filename="code/_games/tests/collection/Zmeika_01/zm_test_02.h" />
+		<Unit filename="code/_games/tests/collection/Zmeika_01/zm_test_03.h" />
 		<Unit filename="code/_games/tests/tests.h" />
 		<Unit filename="code/_gui/buttons.h" />
 		<Unit filename="code/_gui/gui.h" />

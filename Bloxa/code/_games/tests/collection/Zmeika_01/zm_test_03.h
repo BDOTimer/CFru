@@ -13,9 +13,10 @@ namespace sprites3
     using  maze_t = std::unique_ptr<labitinth::Interface>;
 
     struct  Renderspites                     : Objects::IObject
-    {       Renderspites (const sf::View& v) :
+    {       Renderspites (const sf::View& v, const snake::Config& _cfg) :
                 viewconst(v),
-                game     (snake::config1)
+                camsp    (v), ///<---...
+                game     (_cfg)
             {
                 maze = maze_t(labitinth::Interface::make_BestMordaEver());
 
@@ -111,7 +112,10 @@ namespace sprites3
         virtual void draw(sf::RenderTarget& target,
                           sf::RenderStates  states) const
         {
-            auto temp = target.getView();
+            sf::View temp = target.getView();
+
+            temp.setCenter(temp.getSize().x/2, temp.getSize().y/2); ///<---:TODO
+            target.setView(temp);
 
             target.draw(bgbase, states);
             target.draw(promt , states);
@@ -178,8 +182,7 @@ namespace sprites3
         ///----------------------:
         void resize_bg()
         {
-            const sf::Vector2f SXV{ (float)cfg->winsize.x,
-                                    (float)cfg->winsize.y};
+            const sf::Vector2f SXV = viewconst.getSize();
             bgbase.setSize    (SXV);
             bgbord.setSize    (SXV);
         }
@@ -196,7 +199,7 @@ namespace sprites3
         std::cout << "sprites3::Renderspites::test()\n";
 
         sf::View       view;
-        Renderspites r(view);
+        Renderspites r(view, snake::config1);
 
         deb::pause();
     }
@@ -290,12 +293,11 @@ namespace sprites3
         std::cout << "sprites3::Runner::test()\n";
 
         std::unique_ptr<Runner> run(new Runner);
-        Renderspites                       spr(run->getView());
+        Renderspites                       spr(run->getView(), snake::config1);
                                 run->add (&spr);
                                 run->    loop();
         deb::pause();
     }
-
-} /// namespace sprites3
+}
 
 #endif // ZM_TEST_03_H

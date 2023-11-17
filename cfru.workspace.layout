@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_workspace_layout_file>
 	<FileVersion major="1" minor="0" />
-	<ActiveProject path="zm-test-01/zm-test-01.cbp" />
-	<EditorTabsLayout layout="43626fe06551f0350056c20d00000002=0;zm-test-01:code\zm_test_03.h,1;zm-test-01:code\snake_02.h,*2;zm-test-01:code\spritesloader.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=670;besth=261;minw=670;minh=261;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=43626fe06551f0350056c20d00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<ActiveProject path="Bloxa/Bloxa.cbp" />
+	<EditorTabsLayout layout="6a79ef30655781120000fc3700000002=*0;Bloxa:code\main_blox.cpp,1;Bloxa:code\render\render.h,2;Bloxa:code\render\cameras.h,3;Bloxa:code\_games\tests\collection\Zmeika_01\zm_test_03.h,4;Bloxa:code\_games\tests\collection\Zmeika_01\!start.h,5;Bloxa:code\_games\tests\collection\Zmeika_01\main_zm.cpp,6;Bloxa:code\_games\tests\collection\Zmeika_01\spritesloader.h,7;Bloxa:code\_games\tests\collection\Zmeika_01\snake_02.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=654;besth=392;minw=654;minh=392;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=6a79ef30655781120000fc3700000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=0;besth=0;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|" />
 </CodeBlocks_workspace_layout_file>

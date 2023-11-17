@@ -2,29 +2,19 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Release" />
-	<File name="code\main_zm.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="699" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="code\spritesloader.h" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="770" topLine="12" />
-		</Cursor>
-	</File>
-	<File name="code\zm_test_03.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="282" topLine="12" />
-		</Cursor>
-	</File>
-	<File name="code\base.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1552" topLine="37" />
-		</Cursor>
-	</File>
 	<File name="code\zm_test_01.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="404" topLine="60" />
+		</Cursor>
+	</File>
+	<File name="code\zm_test_02.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="897" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="code\spritesloader.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="391" topLine="36" />
 		</Cursor>
 	</File>
 	<File name="code\maze_bme.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -32,93 +22,25 @@
 			<Cursor1 position="9141" topLine="63" />
 		</Cursor>
 	</File>
-	<File name="code\snake_02.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+	<File name="code\base.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="310" topLine="41" />
-		</Cursor>
-		<Folding>
-			<Collapse line="66" />
-			<Collapse line="79" />
-			<Collapse line="80" />
-			<Collapse line="82" />
-			<Collapse line="101" />
-			<Collapse line="109" />
-			<Collapse line="121" />
-			<Collapse line="141" />
-			<Collapse line="142" />
-			<Collapse line="144" />
-			<Collapse line="154" />
-			<Collapse line="158" />
-			<Collapse line="162" />
-			<Collapse line="171" />
-			<Collapse line="174" />
-			<Collapse line="190" />
-			<Collapse line="193" />
-			<Collapse line="197" />
-			<Collapse line="208" />
-			<Collapse line="210" />
-			<Collapse line="219" />
-			<Collapse line="227" />
-			<Collapse line="228" />
-			<Collapse line="229" />
-			<Collapse line="238" />
-			<Collapse line="243" />
-			<Collapse line="249" />
-			<Collapse line="250" />
-			<Collapse line="254" />
-			<Collapse line="255" />
-			<Collapse line="266" />
-			<Collapse line="274" />
-			<Collapse line="276" />
-			<Collapse line="293" />
-			<Collapse line="302" />
-			<Collapse line="303" />
-			<Collapse line="307" />
-			<Collapse line="319" />
-			<Collapse line="327" />
-			<Collapse line="328" />
-			<Collapse line="335" />
-			<Collapse line="343" />
-			<Collapse line="356" />
-			<Collapse line="363" />
-			<Collapse line="366" />
-			<Collapse line="375" />
-			<Collapse line="382" />
-			<Collapse line="402" />
-			<Collapse line="410" />
-			<Collapse line="429" />
-			<Collapse line="431" />
-			<Collapse line="440" />
-			<Collapse line="443" />
-			<Collapse line="465" />
-			<Collapse line="473" />
-			<Collapse line="481" />
-			<Collapse line="482" />
-			<Collapse line="483" />
-			<Collapse line="494" />
-			<Collapse line="504" />
-			<Collapse line="505" />
-			<Collapse line="512" />
-			<Collapse line="520" />
-			<Collapse line="524" />
-			<Collapse line="541" />
-			<Collapse line="544" />
-			<Collapse line="553" />
-			<Collapse line="555" />
-			<Collapse line="566" />
-			<Collapse line="585" />
-			<Collapse line="590" />
-			<Collapse line="595" />
-			<Collapse line="599" />
-			<Collapse line="605" />
-			<Collapse line="618" />
-			<Collapse line="624" />
-		</Folding>
-	</File>
-	<File name="code\zm_test_02.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="897" topLine="12" />
+			<Cursor1 position="1552" topLine="37" />
 		</Cursor>
 	</File>
-	<EditorTabsLayout layout="43626fe06551f0350056c20d00000002=0;zm-test-01:code\zm_test_03.h,1;zm-test-01:code\snake_02.h,*2;zm-test-01:code\spritesloader.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=670;besth=261;minw=670;minh=261;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=43626fe06551f0350056c20d00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<File name="code\zm_test_03.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7416" topLine="50" />
+		</Cursor>
+	</File>
+	<File name="code\main_zm.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="19" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="code\snake_02.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="633" topLine="8" />
+		</Cursor>
+	</File>
+	<EditorTabsLayout layout="@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=654;besth=392;minw=654;minh=392;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|" />
 </CodeBlocks_layout_file>

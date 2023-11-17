@@ -20,4 +20,9 @@
 ///---------------------------------:
 #include "collection/Test_Shaders_01/!start.h"
 
+///---------------------------------|
+/// Тест Змейки.                    |
+///---------------------------------:
+#include "collection/Zmeika_01/!start.h"
+
 #endif // TESTS_H

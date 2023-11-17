@@ -61,10 +61,17 @@ struct  Render   : Global
     ///-------------------------|
     /// Добавить объект.        |
     ///-------------------------:
-    void add    (obj::IObject* po){ gameobjects.push_back(po); }
-    void add2red(obj::IObject* po){  redobjects.push_back(po); }
+    void add    (obj::IObject* po)
+    {   if(nullptr == po)  return;
+        gameobjects.push_back(po);
+    }
+    void add2red(obj::IObject* po)
+    {   if(nullptr == po)  return;
+        redobjects.push_back(po);
+    }
 
-    sf::View& get(cam::eCAMERA T){ return managerCams.get(T); }
+          sf::View& get(cam::eCAMERA T)       { return managerCams.get(T); }
+    const sf::View& get(cam::eCAMERA T) const { return managerCams.get(T); }
 
 private:
     sf::RenderWindow  window;
@@ -172,6 +179,10 @@ private:
     void update()
     {
         for(auto po : gameobjects)
+        {   po->update();
+        }
+
+        for(auto po : redobjects)
         {   po->update();
         }
     }

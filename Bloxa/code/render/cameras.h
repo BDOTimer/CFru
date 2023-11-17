@@ -110,7 +110,8 @@ namespace Cameras
             }
            ~ManagerCameras() { for(auto& p : m) delete p; }
 
-    sf::View& get(eCAMERA T) { return *(sf::View*)(m[size_t(T)]);}
+          sf::View& get(eCAMERA T)       { return *(sf::View*)(m[size_t(T)]);}
+    const sf::View& get(eCAMERA T) const { return *(sf::View*)(m[size_t(T)]);}
 
     void set(eCAMERA T)
     {   window.setView(*(sf::View*)(m[size_t(T)]));

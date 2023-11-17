@@ -1,68 +1,45 @@
-﻿#ifndef ZM_TEST_03_H
-#define ZM_TEST_03_H
+﻿#ifndef ZM_TEST_02_H
+#define ZM_TEST_02_H
 ///----------------------------------------------------------------------------|
 ///
 ///----------------------------------------------------------------------------:
 #include "spritesloader.h"
 #include "maze_bme.h"
-#include "snake_02.h"
 
-namespace sprites3
+
+namespace sprites2
 {
     using pmapr_t = std::unique_ptr<sprites::Map4Render_t>;
     using  maze_t = std::unique_ptr<labitinth::Interface>;
 
-    struct  Renderspites                     : Objects::IObject
-    {       Renderspites (const sf::View& v) :
-                viewconst(v),
-                game     (snake::config1)
+    struct  Renderspites : Objects::IObject
+    {       Renderspites (      )
             {
                 maze = maze_t(labitinth::Interface::make_BestMordaEver());
 
                 name = "Renderspites";
-            /// setMap (sprites::map_01);
-
-                loader.setCam(camsp, game.getdisplay().W(),
-                                     game.getdisplay().H());
+                setMap (sprites::map_01);
 
                 bg.setTexture2RS (bgbase, "bp-2.jpg");
                 bg.setTexture2RS (bgbord, "bp-2.png");
                 resize_bg();
-
-                promt.setString(L"Управление: W, S, курсор.");
             }
-
-        const sf::View& viewconst;
 
         sprites::Loader  loader;
         pmapr_t  pmap = nullptr;
         sf::View          camsp;
         sprites::Promt    promt;
 
-        snake::Game        game;
-        sf::Clock         clock;
-
 
         sprites::TxtrHolder    bg;
         sf::RectangleShape bgbase;
         sf::RectangleShape bgbord;
 
-              float a    = 0.f;
-        const float TICK = 0.1f;
-
         ///------------------------------------------------------------ IObject:
-        void update   ()
-        {   a += clock.restart().asSeconds();
-
-            if(a > TICK)
-            {
-                game.loopone();
-                a        = 0.f;
-            }
-        }
+        void update   (                         ) {};
     /// void input(const sf::Event&        event) {};
         bool RPControl( std::string_view command,
-                        std::vector<float>&  arg) { return false; }
+                        std::vector<float>&  arg) { return false; };
         ///--------------------------------------------------------------------:
 
         ///-----------------------------------------|
@@ -85,10 +62,10 @@ namespace sprites3
                 case sf::Keyboard::Num5 : setMap(map_05); break;
 
 
-                case sf::Keyboard::Up   : camsp.move(  0  ,-15.f); break;
-                case sf::Keyboard::Down : camsp.move(  0  , 15.f); break;
-                case sf::Keyboard::Left : camsp.move(-15.f,  0  ); break;
-                case sf::Keyboard::Right: camsp.move( 15.f,  0  ); break;
+                case sf::Keyboard::Up   : camsp.move( 0  ,-5.f); break;
+                case sf::Keyboard::Down : camsp.move( 0  , 5.f); break;
+                case sf::Keyboard::Left : camsp.move(-5.f, 0  ); break;
+                case sf::Keyboard::Right: camsp.move( 5.f, 0  ); break;
 
                 case sf::Keyboard::W    : camsp.zoom(ZMU); break;
                 case sf::Keyboard::S    : camsp.zoom(ZMD); break;
@@ -103,9 +80,8 @@ namespace sprites3
         void setMap(const sprites::Map_t& m)
         {   _setMap(m);
             loader.checked_isbad(*pmap);
-            loader.setCam( camsp, pmap->W(), pmap->H());
+            loader.setCam(camsp, pmap->W(), pmap->H());
         }
-
 
     private:
         virtual void draw(sf::RenderTarget& target,
@@ -122,15 +98,15 @@ namespace sprites3
 
             sf::Vector2f pos{0, 0};
 
-            for    (size_t y = 0, Y = game.getdisplay().H(); y < Y; ++y)
+            for    (size_t y = 0, Y = pmap->H(); y < Y; ++y)
             {
                     pos   .x = 0;
 
-                for(size_t x = 0, X = game.getdisplay().W(); x < X; ++x)
+                for(size_t x = 0, X = pmap->W(); x < X; ++x)
                 {
-                    const size_t id = game.getdisplay()[y][x].get();
+                    const size_t id = (*pmap)[y][x];
 
-                    sf::Sprite spr = ts[game.cfg.STATUS];
+                    sf::Sprite spr = ts[cfg->fon];
 
                     spr.move   (pos);
                     target.draw(spr,  states);
@@ -150,6 +126,7 @@ namespace sprites3
 
         void _setMap(const sprites::Map_t& m)
         {   pmap = pmapr_t(new sprites::Map4Render_t(m));
+
         }
 
         ///----------------------|
@@ -193,10 +170,9 @@ namespace sprites3
     ///----------------------:
     void Renderspites::test()
     {
-        std::cout << "sprites3::Renderspites::test()\n";
+        std::cout << "sprites::Renderspites::test()\n";
 
-        sf::View       view;
-        Renderspites r(view);
+        Renderspites r;
 
         deb::pause();
     }
@@ -233,9 +209,6 @@ namespace sprites3
         sf::Text           text;
 
         sf::View          cambs;
-        sf::Clock         clock;
-
-        const sf::View& getView() const { return cambs; }
 
         void process_mouse(const sf::Vector2i& mouse_pos)
         {   std::string s("XY: [");
@@ -268,7 +241,6 @@ namespace sprites3
             /// window.draw   (hero);
             /// window.draw   (text);
 
-                for(const auto& o : m) o->update(    );
                 for(const auto& o : m) window.draw(*o);
 
                 window.display ();
@@ -287,15 +259,14 @@ namespace sprites3
     ///----------------------:
     void Runner::test()
     {
-        std::cout << "sprites3::Runner::test()\n";
+        std::cout << "sprites2::Runner::test()\n";
 
         std::unique_ptr<Runner> run(new Runner);
-        Renderspites                       spr(run->getView());
+        Renderspites                       spr ;
                                 run->add (&spr);
                                 run->    loop();
         deb::pause();
     }
+}
 
-} /// namespace sprites3
-
-#endif // ZM_TEST_03_H
+#endif // ZM_TEST_02_H
