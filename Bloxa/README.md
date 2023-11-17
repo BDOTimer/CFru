@@ -20,6 +20,6 @@
  - Добавлен лог.
  
  ##   version-2023.11.17 
- - перенос змейки в блоху.
+ - перенос змейки в блоху.    
  [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/oViSiFF0Z9o/0.jpg)](https://www.youtube.com/watch?v=oViSiFF0Z9o)
  
