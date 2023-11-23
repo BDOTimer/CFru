@@ -5,7 +5,6 @@
 #include "!start.h"
 
 #include "zm_test_01.h"
-#include "zm_test_02.h"
 #include "zm_test_03.h"
 
 void tests()

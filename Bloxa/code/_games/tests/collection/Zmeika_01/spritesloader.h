@@ -236,7 +236,9 @@ Map_t map_05
 
         void setCam(sf::View& cam, size_t NX, size_t NY) const
         {
-            float K = float(cfg->winsize.x) / cfg->winsize.y;
+            const auto& szcam = cam.getSize();
+
+            float K = szcam.x / szcam.y;
 
             const sf::Vector2u     szu = txtr.getTSize();
             const float TX = float(szu.x);

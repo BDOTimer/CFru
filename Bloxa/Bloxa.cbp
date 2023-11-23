@@ -58,7 +58,6 @@
 		<Unit filename="code/_games/tests/collection/Zmeika_01/snake_02.h" />
 		<Unit filename="code/_games/tests/collection/Zmeika_01/spritesloader.h" />
 		<Unit filename="code/_games/tests/collection/Zmeika_01/zm_test_01.h" />
-		<Unit filename="code/_games/tests/collection/Zmeika_01/zm_test_02.h" />
 		<Unit filename="code/_games/tests/collection/Zmeika_01/zm_test_03.h" />
 		<Unit filename="code/_games/tests/tests.h" />
 		<Unit filename="code/_gui/buttons.h" />

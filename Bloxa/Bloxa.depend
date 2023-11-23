@@ -982,10 +982,9 @@
 1699287973 c:\workcb-2023\projects\cfru\bloxa\code\_games\tests\collection\test_shaders_01\shaders_toy.h
 	"IEffect.hpp"
 
-1700241253 source:c:\workcb-2023\projects\cfru\bloxa\code\_games\tests\collection\zmeika_01\main_zm.cpp
+1700733628 source:c:\workcb-2023\projects\cfru\bloxa\code\_games\tests\collection\zmeika_01\main_zm.cpp
 	"!start.h"
 	"zm_test_01.h"
-	"zm_test_02.h"
 	"zm_test_03.h"
 
 1700240134 c:\workcb-2023\projects\cfru\bloxa\code\_games\tests\collection\zmeika_01\!start.h
@@ -1007,7 +1006,7 @@
 	<vector>
 	<ctime>
 
-1700239517 c:\workcb-2023\projects\cfru\bloxa\code\_games\tests\collection\zmeika_01\spritesloader.h
+1700733659 c:\workcb-2023\projects\cfru\bloxa\code\_games\tests\collection\zmeika_01\spritesloader.h
 	"base.h"
 
 1700220658 c:\workcb-2023\projects\cfru\bloxa\code\_games\tests\collection\zmeika_01\base.h
@@ -1031,7 +1030,7 @@
 	"maze_bme.h"
 	"snake_02.h"
 
-1700227542 c:\workcb-2023\projects\cfru\bloxa\code\_games\tests\collection\zmeika_01\snake_02.h
+1700733808 c:\workcb-2023\projects\cfru\bloxa\code\_games\tests\collection\zmeika_01\snake_02.h
 	<iostream>
 	<vector>
 	<list>

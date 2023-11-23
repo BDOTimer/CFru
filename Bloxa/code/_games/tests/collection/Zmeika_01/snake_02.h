@@ -119,8 +119,8 @@ namespace snake
 
         bool is_free(size_t  status) const
         {   return status == STATUS     ||
-                   status == STATUSDISP ||
-                   status == ZM;
+                   status == STATUSDISP;// ||
+                // status == ZM;
         }
 
         bool is_apple(size_t status) const { return status == APPLE; }

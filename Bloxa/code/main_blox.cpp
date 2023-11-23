@@ -62,8 +62,8 @@ int main()
                         /// render->add    (go_shaders);
                         /// render->add    (&clock);
 
-                            render->add2red(go_shaders);
-                        /// render->add2red(zmeika2);
+                        /// render->add2red(go_shaders);
+                            render->add2red(zmeika2);
 
                         /// render->add2red(&cell );
                         /// render->add2red(&axis );
