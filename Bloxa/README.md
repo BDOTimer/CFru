@@ -23,3 +23,8 @@
  - перенос змейки в блоху.    
  [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/oViSiFF0Z9o/0.jpg)](https://www.youtube.com/watch?v=oViSiFF0Z9o)
  
+  ##   version-2023.11.22 
+ - устранение искажения сторон камеры.    
+ [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/hiIE6SF-95Y/0.jpg)](https://www.youtube.com/watch?v=hiIE6SF-95Y)
+ 
+ 
