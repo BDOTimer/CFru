@@ -5,5 +5,7 @@
 		<Project filename="Compas/helloCompas.cbp" />
 		<Project filename="matrix/matrix.cbp" />
 		<Project filename="zm-test-01/zm-test-01.cbp" />
+		<Project filename="hello01/hello01/hello01.cbp" />
+		<Project filename="bezier-curves-master/Bezier_01.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>

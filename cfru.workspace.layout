@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_workspace_layout_file>
 	<FileVersion major="1" minor="0" />
-	<ActiveProject path="Bloxa/Bloxa.cbp" />
-	<EditorTabsLayout layout="48a4e880655f21b40001720800000002=*0;Bloxa:code\main_blox.cpp,1;Bloxa:code\render\render.h,2;Bloxa:code\render\cameras.h,3;Bloxa:code\_games\tests\collection\Zmeika_01\zm_test_03.h,4;Bloxa:code\_games\tests\collection\Zmeika_01\!start.h,5;Bloxa:code\_games\tests\collection\Zmeika_01\main_zm.cpp,6;Bloxa:code\_games\tests\collection\Zmeika_01\spritesloader.h,7;Bloxa:code\_games\tests\collection\Zmeika_01\snake_02.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=654;besth=222;minw=654;minh=222;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=48a4e880655f21b40001720800000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=0;besth=0;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|" />
+	<ActiveProject path="bezier-curves-master/Bezier_01.cbp" />
+	<PreferredTarget name="Release" />
+	<EditorTabsLayout layout="dde297606562e9470004c6ee00000002=0;Bezier_01:bezier\main.cpp,1;Bloxa:code\main_blox.cpp,2;Bezier_01:bezier\Bezier\Bezier.cpp,*3;Bezier_01:bezier\Game.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=654;besth=222;minw=654;minh=222;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=dde297606562e9470004c6ee00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=0;besth=0;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|" />
 </CodeBlocks_workspace_layout_file>

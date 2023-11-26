@@ -2,19 +2,59 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="ReleaseStatic" />
-	<File name="code\_games\tests\collection\Zmeika_01\snake_02.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4268" topLine="114" />
-		</Cursor>
-	</File>
 	<File name="code\_games\tests\collection\Test_Cell_01.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1693" topLine="38" />
 		</Cursor>
 	</File>
-	<File name="code\render\render.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+	<File name="code\render\cameras.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2458" topLine="152" />
+			<Cursor1 position="3582" topLine="97" />
+		</Cursor>
+	</File>
+	<File name="code\_gui\gui.h" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="224" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="code\_games\tests\collection\Test_Shaders_01\shaders_toy.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="872" topLine="16" />
+		</Cursor>
+	</File>
+	<File name="code\mylib\debug.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="845" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="code\_games\tests\collection\Test_Shaders_01\shaders_sdk.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="10272" topLine="253" />
+		</Cursor>
+	</File>
+	<File name="code\_games\tests\collection\Zmeika_01\spritesloader.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="365" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="code\_games\tests\collection\Zmeika_01\snake_02.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4329" topLine="84" />
+		</Cursor>
+	</File>
+	<File name="code\_log\logout.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2411" topLine="65" />
+		</Cursor>
+	</File>
+	<File name="code\_games\tests\collection\Zmeika_01\main_zm.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="278" topLine="4" />
+		</Cursor>
+	</File>
+	<File name="code\mylib\mylib.h" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="389" topLine="14" />
 		</Cursor>
 	</File>
 	<File name="code\!doc.txt" open="0" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -22,9 +62,49 @@
 			<Cursor1 position="503" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="code\_log\logout.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="code\_gui\buttons.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2411" topLine="65" />
+			<Cursor1 position="5601" topLine="153" />
+		</Cursor>
+	</File>
+	<File name="code\_redactor\redactor.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="222" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="code\main_blox.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="307" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="code\_games\tests\collection\Test_Clock_01.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4596" topLine="107" />
+		</Cursor>
+	</File>
+	<File name="code\_games\tests\collection\Zmeika_01\zm_test_03.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6743" topLine="202" />
+		</Cursor>
+	</File>
+	<File name="code\_games\tests\collection\Test_Shaders_01\!start.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="418" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="code\global.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="409" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="code\render\fps.h" open="0" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="698" topLine="30" />
+		</Cursor>
+	</File>
+	<File name="code\_games\tests\collection\Zmeika_01\!start.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="405" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="code\_games\tests\collection\Test_Shaders_01\Shader.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
@@ -37,64 +117,9 @@
 			<Cursor1 position="876" topLine="3" />
 		</Cursor>
 	</File>
-	<File name="code\mylib\mylib.h" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="code\render\resources.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="389" topLine="14" />
-		</Cursor>
-	</File>
-	<File name="code\_games\tests\collection\Test_Shaders_01\shaders_toy.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="872" topLine="16" />
-		</Cursor>
-	</File>
-	<File name="code\main_blox.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2653" topLine="55" />
-		</Cursor>
-	</File>
-	<File name="code\_games\tests\collection\Zmeika_01\main_zm.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="278" topLine="4" />
-		</Cursor>
-	</File>
-	<File name="code\_redactor\redactor.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="222" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="code\mylib\debug.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="845" topLine="12" />
-		</Cursor>
-	</File>
-	<File name="code\global.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="409" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="code\_games\tests\collection\Zmeika_01\spritesloader.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="365" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="code\_games\tests\collection\Zmeika_01\!start.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="405" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="code\render\cameras.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3582" topLine="97" />
-		</Cursor>
-	</File>
-	<File name="code\_games\tests\collection\Test_Shaders_01\!start.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="418" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="code\global.cpp" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="421" topLine="0" />
+			<Cursor1 position="3918" topLine="91" />
 		</Cursor>
 	</File>
 	<File name="code\_games\games.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -102,24 +127,9 @@
 			<Cursor1 position="289" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="code\render\resources.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="code\global.cpp" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3918" topLine="91" />
-		</Cursor>
-	</File>
-	<File name="code\_games\tests\collection\Test_Shaders_01\shaders_sdk.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="10272" topLine="253" />
-		</Cursor>
-	</File>
-	<File name="code\_gui\buttons.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="5601" topLine="153" />
-		</Cursor>
-	</File>
-	<File name="code\render\fps.h" open="0" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="698" topLine="30" />
+			<Cursor1 position="421" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="code\_games\tests\collection\Test_Shaders_01\IEffect.hpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
@@ -127,20 +137,10 @@
 			<Cursor1 position="559" topLine="49" />
 		</Cursor>
 	</File>
-	<File name="code\_games\tests\collection\Zmeika_01\zm_test_03.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+	<File name="code\render\render.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="6743" topLine="202" />
+			<Cursor1 position="2458" topLine="152" />
 		</Cursor>
 	</File>
-	<File name="code\_gui\gui.h" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="224" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="code\_games\tests\collection\Test_Clock_01.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4596" topLine="107" />
-		</Cursor>
-	</File>
-	<EditorTabsLayout layout="48a4e880655f21b40001720800000002=*0;Bloxa:code\main_blox.cpp,1;Bloxa:code\render\render.h,2;Bloxa:code\render\cameras.h,3;Bloxa:code\_games\tests\collection\Zmeika_01\zm_test_03.h,4;Bloxa:code\_games\tests\collection\Zmeika_01\!start.h,5;Bloxa:code\_games\tests\collection\Zmeika_01\main_zm.cpp,6;Bloxa:code\_games\tests\collection\Zmeika_01\spritesloader.h,7;Bloxa:code\_games\tests\collection\Zmeika_01\snake_02.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=654;besth=222;minw=654;minh=222;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=48a4e880655f21b40001720800000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=0;besth=0;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|" />
+	<EditorTabsLayout layout="dde297606562e9470004c6ee00000002=1;Bloxa:code\main_blox.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=654;besth=222;minw=654;minh=222;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=dde297606562e9470004c6ee00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=0;besth=0;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=10|" />
 </CodeBlocks_layout_file>
